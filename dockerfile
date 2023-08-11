@@ -1,2 +1,2 @@
-FROM ayushmaan-singh1/docker-apache
+FROM "ayushmaan-singh1/docker-apache"
 ADD . /var/www/html
