@@ -1,2 +1,2 @@
-FROM "ayushmaan-singh1/docker-apache"
+FROM hshar/webapp
 ADD . /var/www/html
