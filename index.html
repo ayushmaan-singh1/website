@@ -1,5 +1,106 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Certificates & Projects</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 90%;
+            margin: auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .certificate, .project {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        .certificate:hover, .project:hover {
+            transform: scale(1.05);
+        }
+        .certificate img, .project img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .certificate h3, .project h3 {
+            color: #0073e6;
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+        .certificate p, .project p {
+            color: #555;
+        }
+        .project a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #0073e6;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .project a:hover {
+            background-color: #005bb5;
+        }
+    </style>
+</head>
 <body>
-<h1>Hi this website is in server </h1>
+    <div class="container">
+        <h1>My Certificates & GitHub Projects</h1>
+        <div class="grid-container">
+            <!-- Certificates Section -->
+            <div class="certificate">
+                <img src="images/aws-cert.png" alt="AWS Certificate">
+                <h3>AWS Certified Solutions Architect</h3>
+                <p>Valid through 2024</p>
+            </div>
+            <div class="certificate">
+                <img src="images/rhcsa-cert.png" alt="RHCSA Certificate">
+                <h3>Red Hat Certified System Administrator (RHCSA)</h3>
+                <p>Valid through 2024</p>
+            </div>
+            <!-- Repeat for the rest of your certificates -->
+            <div class="certificate">
+                <img src="images/cert3.png" alt="Certificate 3">
+                <h3>Certificate 3</h3>
+                <p>Details about Certificate 3</p>
+            </div>
+            <!-- Add more certificates in similar structure -->
+
+            <!-- Projects Section -->
+            <div class="project">
+                <img src="images/project1.png" alt="Project 1">
+                <h3>Project 1: Telekom Deutschland</h3>
+                <p>Managed Kubernetes clusters for 5G rollout and automation.</p>
+                <a href="https://github.com/ayushmaan-singh1/website/tree/public" target="_blank">View on GitHub</a>
+            </div>
+            <div class="project">
+                <img src="images/project2.png" alt="Project 2">
+                <h3>Project 2: Dish Network</h3>
+                <p>Provided cloud-native solutions for ORAN 5G, improving scalability.</p>
+                <a href="https://github.com/ayushmaan-singh1/website/tree/public" target="_blank">View on GitHub</a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
